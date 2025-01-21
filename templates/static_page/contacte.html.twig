@@ -3,5 +3,84 @@
 {% block title %}Stockflow{% endblock %}
 
 {% block main %}
-<h1>Descàrrega de producte i compra</h1>
+<div>
+      <div>
+        <div>
+          <h1>CONTACTO</h1>
+        </div>
+        <div>
+          <div>
+            <p><i class="fa-solid fa-building"></i></p>
+            <p>Dirección</p>
+            <p><a href="https://maps.app.goo.gl/hcZNnDwhHCoCQf9XA" target="_blank">C/Duanes, 17 - Pego</a></p>
+          </div>
+          <div>
+            <p><i class="fa-regular fa-calendar"></i></p>
+            <p>Horario</p>
+            <p>08:00 - 15:00</p>
+          </div>
+          <div>
+            <p><i class="fa-solid fa-phone"></i></p>
+            <p>Teléfono</p>
+            <p>+34 966 409 960</p>
+          </div>
+          <div>
+            <p><i class="fa-solid fa-at"></i></p>
+            <p>Email</p>
+            <p>03007613@edu.gva.es</p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <form>
+              <div>
+                <div>
+                  <div>
+                    <label for="contacto-direccion">Nombre *</label>
+                    <input type="text" id="contacto-direccion" placeholder="Indica tu nombre" required>
+                  </div>
+
+                  <div>
+                    <label for="contacto-apellidos">Apellidos *</label>
+                    <input type="text" id="contacto-apellidos" placeholder="Indica tus apellidos" required>
+                  </div>
+                </div>
+                <div>
+                  <div>
+                    <label for="contacto-email">Email *</label>
+                    <input type="email" id="contacto-email" placeholder="example@mail.com" required>
+                  </div>
+
+                  <div>
+                    <label for="contacto-tlf">Teléfono</label>
+                    <input type="tel" id="contacto-tlf" placeholder="Indica un teléfono">
+                  </div>
+                </div>
+              </div>
+
+              <fieldset>
+                <legend>Mensaje</legend>
+                <textarea id="contacto-msg" rows="4"></textarea>
+              </fieldset>
+
+              <input type="checkbox" id="contacto-protecDatos" required>
+              <label for="contacto-protecDatos">Acepto <a
+                  href="https://stockflow.daw.iesevalorpego.es/terminos_condiciones/terminos_condiciones.html">términos</a>
+                y <a
+                  href="https://stockflow.daw.iesevalorpego.es/terminos_condiciones/terminos_condiciones.html">condiciones</a></label>
+
+              <br>
+
+              <div>
+                <button type="submit">Enviar</button>
+              </div>
+            </form>
+          </div>
+          <div></div>
+          <div>
+            <img src="./contacte_files/contacto.jpg" alt="Imagen de contacto">
+          </div>
+        </div>
+      </div>
+    </div>
 {% endblock %}
